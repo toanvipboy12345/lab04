@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bài 5 Lap 4-3</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <script src="https://unpkg.com/boxicons@2.1.4/dist/boxicons.js"></script>
+    <style>
+        *{
+            padding: 0;
+            margin: 0;
+            font-size: 16px;
+            font-family: Arial, Helvetica, sans-serif;
+        }
+        ul{
+            list-style: none;
+           
+        }
+        a{
+            color: black;
+            text-decoration: none;
+        }
+        .menu-1{
+            background-color: #ccc;
+            position: relative;
+        }
+        .menu-2{
+            position: absolute;
+            top:100%;
+            left:0;
+        }
+        .menu-1>ul{
+            display: flex;
+        }
+        .menu-1>ul>li{
+            padding: 0.5rem;
+            
+        }
+        ul li:hover{
+            background-color: black;
+        }
+        .menu-1>ul>li>a{
+            text-transform: uppercase;
+            color: white;
+            font-size: 1rem;
+        
+        }
+        /* Lấy thẻ con đầu tiên trong ul */
+        .menu-1>ul:first-child{
+            margin-left: 1rem;
+        }
+        .sub-menu{
+            padding: 1rem;
+        }
+        h4{
+            color: red;
+            margin-bottom: 1rem;
+        }
+        .sub-menu li{
+            margin: 1rem;
+        }
+        .sub-menu li:hover a{
+            color: #fff;
+        }
+        .menu-2{
+            display: none;
+            width: 100%;
+            flex-wrap: wrap;
+            justify-content: space-between;
+        }
+        .sub-menu{
+            width: 30%;
+        }
+        /* Tạo đậm chữ */
+        .font-bold{
+            font-weight: bold;
+        }
+        .menu-1>ul>li:hover>.menu-2{
+            display: flex;
+        }
+
+    </style>
+</head>
+<body>
+    <nav class="menu-1">
+        <ul>
+            <li><a href="#">Trang chủ</a></li>
+            <li><a href="#">Các khóa đào tạo <span><i class="fa-solid fa-caret-down"></i></span></a>
+            <nav class="menu-2">
+                <div class="sub-menu">
+                    <h4>Chuyên đề web php</h4>
+                    <ul>
+                        <li><a href="#">Lập trình web với <span class="font-bold">HTML5-CSS3-Jquery-Bootstrap-Ajax</span>-[36h]</a></li>
+                        <li><a href="#">Lập trình web <span class="font-bold">frontend-reactjs</span>-[75h]</a></li>
+                        <li><a href="#">Lập trình web với mã nguồn mở <span class="font-bold">PHP&MYSQL-PHP FRAMEWORK</span>-[126h]</a></li>
+                    </ul>
+                </div>
+                <div class="sub-menu">
+                    <h4>Chuyên đề web php</h4>
+                    <ul>
+                        <li><a href="#">Lập trình web với <span class="font-bold">HTML5-CSS3-Jquery-Bootstrap-Ajax</span>-[36h]</a></li>
+<li><a href="#">Lập trình web <span class="font-bold">frontend-reactjs</span>-[75h]</a></li>
+                        <li><a href="#">Lập trình web với mã nguồn mở <span class="font-bold">PHP&MYSQL-PHP FRAMEWORK</span>-[126h]</a></li>
+                    </ul>
+                </div>
+                <div class="sub-menu">
+                    <h4>Chuyên đề web php</h4>
+<ul>
+                        <li><a href="#">Lập trình web với <span class="font-bold">HTML5-CSS3-Jquery-Bootstrap-Ajax</span>-[36h]</a></li>
+                        <li><a href="#">Lập trình web <span class="font-bold">frontend-reactjs</span>-[75h]</a></li>
+                        <li><a href="#">Lập trình web với mã nguồn mở <span class="font-bold">PHP&MYSQL-PHP FRAMEWORK</span>-[126h]</a></li>
+                    </ul>
+                </div>
+                <div class="sub-menu">
+                    <h4>Chuyên đề web php</h4>
+                    <ul>
+                        <li><a href="#">Lập trình web với <span class="font-bold">HTML5-CSS3-Jquery-Bootstrap-Ajax</span>-[36h]</a></li>
+                        <li><a href="#">Lập trình web <span class="font-bold">frontend-reactjs</span>-[75h]</a></li>
+                        <li><a href="#">Lập trình web với mã nguồn mở <span class="font-bold">PHP&MYSQL-PHP FRAMEWORK</span>-[126h]</a></li>
+                    </ul>
+                </div>
+                <div class="sub-menu">
+                    <h4>Chuyên đề web php</h4>
+                    <ul>
+                        <li><a href="#">Lập trình web với <span class="font-bold">HTML5-CSS3-Jquery-Bootstrap-Ajax</span>-[36h]</a></li>
+                        <li><a href="#">Lập trình web <span class="font-bold">frontend-reactjs</span>-[75h]</a></li>
+                        <li><a href="#">Lập trình web với mã nguồn mở <span class="font-bold">PHP&MYSQL-PHP FRAMEWORK</span>-[126h]</a></li>
+                    </ul>
+                </div>
+                <div class="sub-menu">
+                    <h4>Chuyên đề web php</h4>
+                    <ul>
+                        <li><a href="#">Lập trình web với <span class="font-bold">HTML5-CSS3-Jquery-Bootstrap-Ajax</span>-[36h]</a></li>
+                        <li><a href="#">Lập trình web <span class="font-bold">frontend-reactjs</span>-[75h]</a></li>
+                        <li><a href="#">Lập trình web với mã nguồn mở <span class="font-bold">PHP&MYSQL-PHP FRAMEWORK</span>-[126h]</a></li>
+                    </ul>
+                </div>
+            </nav>
+            </li>
+            <li><a href="#">Lập trình cho trẻ em</a></li>
+            <li><a href="#">Dịch vụ</a></li>
+            <li><a href="#">Lịch khai giảng</a></li>
+            <li><a href="#">Tin tức</a></li>
+            <li><a href="#">Tiện ích</a></li>
+            <li><a href="#">Liên hệ</a></li>
+        </ul>
+    </nav>
+</body>
+</html>

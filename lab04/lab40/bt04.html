@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Layout Example</title>
+    <style>
+        * {
+            padding: 0;
+            margin: 0;
+            box-sizing: border-box;
+        }
+        html, body {
+            height: 100%;
+        }
+        .container {
+            height: 100vh;
+            display: flex;
+            flex-direction: column;
+        }
+        header, nav, footer {
+            text-align: center;
+            padding: 20px; 
+            border: 1px solid green;
+            margin: 10px;
+        }
+        .content {
+            flex: 1;
+            display: flex;
+            justify-content: space-between;
+            padding: 10px;
+        }
+        .content > div {
+            padding: 20px;
+            border: 1px solid green;
+            text-align: center;
+        }
+        .content > div:first-child, .content > div:last-child {
+            flex: 1;
+        }
+        .content > div:nth-child(2) {
+            flex: 2;
+        }
+        .content > div:not(:last-child) {
+            margin-right: 10px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <header>header</header>
+        <nav>Nav</nav>
+        <div class="content">
+            <div>Left</div>
+            <div>Body</div>
+            <div>Right</div>
+        </div>
+        <footer>footer</footer>
+    </div>
+</body>
+</html>

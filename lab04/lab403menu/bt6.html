@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <title>Document</title>
+</head>
+<style>
+    * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+        font-size: 16px;
+        font-family: Arial, Helvetica, sans-serif;
+    }
+    #menu1{
+        border: 1px solid red;
+        width: 250px;
+        box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.1);
+    }
+    #menu1 ul {
+        list-style-type: none;
+        padding: 0;
+        margin: 0;
+        position: relative;
+       
+      }
+    #menu1 ul li a{
+        text-decoration: none;
+        padding: 10px 15px;
+        display: block;
+        color: black;
+    }
+    #menu1 ul li:hover{
+        background-color: red;
+    }
+
+    .menu2{
+        border: 1px solid blue;
+        position: absolute;
+        top: 1%;
+        left: 100%;
+        visibility: hidden;
+        background-color: #f9f9f9;
+        margin-left: 5px;
+        width: 320%;
+        list-style-type: disc;
+        
+        box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.1);
+    }
+    .menu2>ul{
+        display: flex ;
+        flex-direction: column;
+        height: 300px;
+        flex-wrap: wrap;
+        
+    }
+    #menu1>ul>li:hover .menu2{
+        visibility: visible;
+    }
+    .menu2 .submenu h3{
+        padding: 5px;
+    }
+
+</style>
+<body>
+    <nav id="menu1">
+        <ul>
+            <li><a href=""> <span><i class="fa-solid fa-house"></i></span> Điện máy</a></li>
+            <li><a href=""> <span><i class="fa-solid fa-house"></i></span> Đồ gia dụng </a></li>
+            <li><a href=""> <span><i class="fa-solid fa-house"></i></span> Dụng cụ và công cụ <span style="margin-left: 5px;"><i class="fa-solid fa-chevron-right"></i></span></a>
+            <nav class="menu2">
+                
+                <ul>
+                    <h3>Máy khoan</h3>
+                    <li><a href="">Máy khoan pin</a></li>
+                    <li><a href="">Máy khoan động lực</a></li>
+                    <li><a href="">Máy khoan bê tông, Máy khoan búa</a></li>
+                    <li><a href="">Máy đục bê tông</a></li>
+                    <li><a href="">Máy khoan cầm tay gia đình</a></li>
+                    <li><a href="">Máy khoan mini</a></li>
+                    <li><a href="">Máy khoan rút lõi bê tông</a> </li>
+                    <li><a href="">Máy khoan góc</a></li>
+                    <li><a href="">Máy khoan bàn</a></li>
+                    <li><a href="">Máy khoan từ</a></li>
+                    <li><a href="">Máy bơm nước chạy dầu</a></li>
+                    <li><a href="">Máy bơm nước chạy xăng</a></li>
+                    <li><a href="">Máy gieo hạt</a></li>
+                    <h3>Máy hàn điện tử</h3>
+                    <li><a href="">Máy khoan pin</a></li>
+                    <li><a href="">Máy khoan động lực</a></li>
+                    <li><a href="">Máy khoan bê tông, Máy khoan búa</a></li>
+                    <li><a href="">Máy đục bê tông</a></li>
+                    <li><a href="">Máy khoan cầm tay gia đình</a></li>
+                    <li><a href="">Máy khoan mini</a></li>
+                    <li><a href="">Máy khoan rút lõi bê tông</a> </li>
+                    <li><a href="">Máy khoan góc</a></li>
+                </ul>
+                
+               
+            </nav>
+            </li>
+            <li><a href=""> <span><i class="fa-solid fa-house"></i></span> Y tế và & sức khoẻ</a></li>
+            <li><a href=""> <span><i class="fa-solid fa-house"></i></span> Thể thao và ngoài trời</a></li>
+            <li><a href=""> <span><i class="fa-solid fa-house"></i></span> Thiết bị văn phòng</a></li>
+            <li><a href=""> <span><i class="fa-solid fa-house"></i></span> Thiết bị số, phụ kiện</a></li>
+            <li><a href=""> <span><i class="fa-solid fa-house"></i></span> Thiết bị công nghiệp</a></li>
+            <li><a href=""> <span><i class="fa-solid fa-house"></i></span> Nhà cửa và đời sống</a></li>
+        </ul>
+    </nav>
+</body>
+</html>
